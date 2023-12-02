@@ -1,0 +1,91 @@
+  @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital@1&display=swap');
+  .navbar {
+    overflow: hidden;
+    background-color: #f2f2f2;
+   }
+   
+   .navbar a {
+    float: left;
+    display: block;
+    color: #2b6777;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+   }
+   
+   .dropdown {
+    float: left;
+    overflow: hidden;
+   }
+   
+   .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: #2b6777;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: large;
+    font-weight: 500;
+    margin: 0;
+   }
+   
+   .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #2b6772;
+    color: #f2f2f2;
+   }
+   
+   .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+   }
+   
+   .dropdown-content a {
+    float: none;
+    color: #f2f2f2;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+   }
+   
+   .dropdown-content a:hover {
+    background-color: #2b6777;
+   }
+   
+   .dropdown:hover .dropdown-content {
+    display: block;
+   }
+body{
+    background-color: #2b6772;
+}
+
+.slideshow-container {
+    max-width: 1100px;
+    position: relative;
+    margin: auto;
+   }
+   
+   .slide {
+    display: none;
+   }
+   
+   .slide img {
+    width: 120%;
+    height: auto;
+   }
+   
+   .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+   }
+   
+   @keyframes fade {
+    from {opacity: 0.4} 
+    to {opacity: 1}
+   }
